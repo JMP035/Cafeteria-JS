@@ -1,10 +1,8 @@
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     height: 100vh;
     display: flex;
@@ -14,11 +12,9 @@ body {
     color: white;
     font-size: 2rem;
     position: relative;
-    
+    font-family: 'Arial', sans-serif; /* Cambia la fuente para un estilo más profesional */
 }
-
-
-video{     /* Estilos del video de Fondo */
+video {
     position: fixed;
     top: 0;
     left: 0;
@@ -26,15 +22,109 @@ video{     /* Estilos del video de Fondo */
     height: 100%;
     object-fit: cover;
     z-index: -1;
-
 }
-
-.contenido {    /*texto sobre el video*/
-    position: relative;
-    z-index: 1;
-    background: rgba(0,0,0,0.5);    /* Fondo negro degradado */
+.Nombre {
     padding: 20px;
     border-radius: 10px;
-
+    margin-right: 270px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5); /* Sombra para darle profundidad */
 }
 
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5); /* Sombra para darle profundidad */
+}
+.logo {
+    height: 150px; /* Tamaño del logo */
+    margin-right: auto; /* Empuja los botones a la derecha */
+    border-radius: 20%;
+}
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espacio entre elementos */
+}
+.btn {
+    padding: 12px 25px;
+    background: #000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.btn:hover {
+    background: #444;
+    transform: scale(1.1); /* Aumento de tamaño en hover */
+}
+
+/* Ajustes de imagen en la navegación */
+.nav-container img {
+    height: 100%;
+    width: auto;
+}
+
+/* Espacio adicional debajo del header para que el contenido no quede cubierto */
+body::after {
+    content: '';
+    display: block;
+    height: 100px; /* Espacio debajo de la barra de navegación */
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    padding: 20px 0;
+    text-align: center;
+}
+/* Contenedor de la suscripción */
+.suscribir {
+    align-items: center;
+    width: 100%;
+    max-width: 600px; /* Limitar el ancho máximo */
+    margin: 0 auto;
+}
+/* Fila para los inputs */
+.suscribir input {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 50%;
+
+}
+/* El botón debe ocupar el 100% del ancho */
+.suscribir button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%; /* El botón ocupará todo el ancho disponible */
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+}
