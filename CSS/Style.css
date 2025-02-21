@@ -31,6 +31,7 @@ video {
 }
 .header {
     display: flex;
+    font-family: 'Courier New', Courier, monospace; /* Fuente estilo máquina de escribir */
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
@@ -127,4 +128,17 @@ footer {
     border-radius: 5px;
     background-color: white;
     color: black;
+}
+
+
+h1 {
+    font-family: 'Courier New', Courier, monospace; /* Fuente estilo máquina de escribir */
+    font-size: 5rem; /* Tamaño de letra grande */
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    
 }
