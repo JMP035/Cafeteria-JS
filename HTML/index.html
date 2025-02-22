@@ -1,57 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Café Código</title>
-    <link rel="stylesheet" href="../CSS/style.css">
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura la visualización en dispositivos móviles -->
+    <title>Café Código</title> <!-- Título de la página -->
+    <link rel="stylesheet" href="../CSS/style.css"> <!-- Enlace al archivo CSS externo -->
 </head>
 <body>
+    <!-- Encabezado de la página -->
     <header class="header">
+        <!-- Logo de la cafetería -->
         <img src="/images/Logo Cafeteria MC.png" alt="Logo" class="logo">
+        
+        <!-- Nombre de la cafetería -->
         <div class="Nombre">
             <h1>Café Código</h1>
         </div>
+
+        <!-- Contenedor de la navegación -->
         <div class="nav-container">
             <nav class="nav">
-                <a href="../HTML/Historia.html" class="btn">Historia</a>
-                <a href="../HTML/productos.html" class="btn">Productos</a>
+                <a href="../HTML/Historia.html" class="btn">Historia</a> <!-- Enlace a la página de Historia -->
+                <a href="../HTML/productos.html" class="btn">Productos</a> <!-- Enlace a la página de Productos -->
             </nav>
         </div>
     </header>
+
+    <!-- Contenido principal de la página -->
     <main>
-    <video autoplay loop muted>
-        <source src="/images/video de inicio.mp4" type="video/mp4">
-    </video>
+        <!-- Video de fondo -->
+        <video autoplay loop muted> <!-- El video se reproduce automáticamente, en bucle y sin sonido -->
+            <source src="/images/video de inicio.mp4" type="video/mp4"> <!-- Fuente del video -->
+        </video>
 
-    <div class="contenedor-texto">
-        <h2>Historia</h2>
-        <p>Café Código fue fundado en 2004 por Monica Sevilla, una guatemalteca con una visión radical, innovando ideas para que cada taza de café sea única, nueva e inclusiva.</p>
-    </div>
+        <!-- Sección de historia -->
+        <div class="contenedor-texto">
+            <h2>Historia</h2>
+            <p>Café Código fue fundado en 2004 por Monica Sevilla, una guatemalteca con una visión radical, innovando ideas para que cada taza de café sea única, nueva e inclusiva.</p>
+        </div>
 
-    <div class="contenedor-texto">
-        <p>Café Código abrió sus puertas hace 20 años con una visión innovadora: fusionar el mundo del café con la informática. Fundada en 2004 por un grupo de programadores apasionados, esta cafetería nació como un espacio donde los amantes del código y la tecnología pudieran reunirse, compartir ideas y trabajar en un ambiente inspirador. Desde sus inicios, el local se destacó por ofrecer Wi-Fi gratuito, estaciones de carga y un entorno acogedor que atrajo a desarrolladores, estudiantes y emprendedores en busca de un lugar donde la creatividad fluyera junto con una buena taza de café.</p>
-    </div>
+        <!-- Sección con más detalles sobre la historia del café -->
+        <div class="contenedor-texto">
+            <p>Café Código abrió sus puertas hace 20 años con una visión innovadora: fusionar el mundo del café con la informática. Fundada en 2004 por un grupo de programadores apasionados, esta cafetería nació como un espacio donde los amantes del código y la tecnología pudieran reunirse, compartir ideas y trabajar en un ambiente inspirador. Desde sus inicios, el local se destacó por ofrecer Wi-Fi gratuito, estaciones de carga y un entorno acogedor que atrajo a desarrolladores, estudiantes y emprendedores en busca de un lugar donde la creatividad fluyera junto con una buena taza de café.</p>
+        </div>
 
-    <div class="contenedor-texto">
-        <p>A medida que la tecnología avanzaba, Café Código evolucionó con ella. Se convirtió en sede de hackatones, talleres de programación y meetups sobre ciberseguridad, inteligencia artificial y desarrollo de software. Su menú también reflejó esta fusión, con bebidas como el “Espresso Byte” y el “Latte Algorítmico”, que se convirtieron en favoritos entre sus clientes. Además, el café siempre ha apostado por la sostenibilidad, colaborando con proveedores de café ético y adoptando tecnología ecológica en su funcionamiento.</p>
-    </div>
+        <!-- Sección sobre la evolución de Café Código -->
+        <div class="contenedor-texto">
+            <p>A medida que la tecnología avanzaba, Café Código evolucionó con ella. Se convirtió en sede de hackatones, talleres de programación y meetups sobre ciberseguridad, inteligencia artificial y desarrollo de software. Su menú también reflejó esta fusión, con bebidas como el “Espresso Byte” y el “Latte Algorítmico”, que se convirtieron en favoritos entre sus clientes. Además, el café siempre ha apostado por la sostenibilidad, colaborando con proveedores de café ético y adoptando tecnología ecológica en su funcionamiento.</p>
+        </div>
 
-    <div class="contenedor-texto">
-        <p>Hoy en día, Café Código es un referente en el mundo de la tecnología y el café. Con sucursales en todo el país y una comunidad de miles de seguidores en redes sociales, la marca se ha expandido más allá de las fronteras de Guatemala, llegando a convertirse en un punto de encuentro para los amantes de la innovación y el buen café en todo el mundo. Su lema, “Amor y pasión en cada taza”, resume la filosofía de la marca: ofrecer un espacio donde la creatividad, la tecnología y el café se unan para inspirar a las mentes más brillantes del siglo XXI.</p>
-    </div>
-</main>
+        <!-- Sección sobre la actualidad del café -->
+        <div class="contenedor-texto">
+            <p>Hoy en día, Café Código es un referente en el mundo de la tecnología y el café. Con sucursales en todo el país y una comunidad de miles de seguidores en redes sociales, la marca se ha expandido más allá de las fronteras de Guatemala, llegando a convertirse en un punto de encuentro para los amantes de la innovación y el buen café en todo el mundo. Su lema, “Amor y pasión en cada taza”, resume la filosofía de la marca: ofrecer un espacio donde la creatividad, la tecnología y el café se unan para inspirar a las mentes más brillantes del siglo XXI.</p>
+        </div>
+    </main>
 
+    <!-- Pie de página con formulario de suscripción -->
     <footer>
         <div class="suscribir">
+            <!-- Campo de entrada para el nombre -->
             <input type="text" name="nombres" placeholder="Nombre" required>
+
+            <!-- Campo de entrada para el correo electrónico -->
             <input type="email" name="email" placeholder="Correo electrónico" required>
+
+            <!-- Campo de entrada para el número de teléfono -->
             <input type="tel" name="celular" placeholder="Número Telefónico" required>
+
+            <!-- Botón para suscribirse -->
             <button type="submit">Suscribir</button>
         </div>
     </footer>
 </body>
 </html>
+
 
 
 

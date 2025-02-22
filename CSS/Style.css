@@ -1,157 +1,170 @@
+/* Reseteo de márgenes y padding para todos los elementos */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Asegura que el tamaño de los elementos incluya el padding y border */
 }
 
+/* Estilos generales para el cuerpo de la página */
 body {
     margin: 0;
     padding: 0;
     overflow-y: auto; /* Permite el desplazamiento vertical */
     display: flex;
-    flex-direction: column; /* Alinea los elementos en columna */
-    justify-content: flex-start; /* Alinea los elementos al inicio */
-    align-items: center;
-    text-align: center;
-    color: white;
-    font-size: 2rem;
+    flex-direction: column; /* Alinea los elementos en una columna */
+    justify-content: flex-start; /* Alinea los elementos al inicio del eje principal */
+    align-items: center; /* Centra los elementos en el eje secundario */
+    text-align: center; /* Centra el texto */
+    color: white; /* Texto en color blanco */
+    font-size: 2rem; /* Tamaño de fuente grande */
     position: relative;
-    font-family: 'Arial', sans-serif; /* Cambia la fuente para un estilo más profesional */
+    font-family: 'Arial', sans-serif; /* Fuente profesional y legible */
 }
 
+/* Estilos para el video de fondo */
 video {
-    position: fixed;
+    position: fixed; /* Fija el video en la pantalla */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    z-index: -1;
+    object-fit: cover; /* Asegura que el video cubra toda la pantalla */
+    z-index: -1; /* Lo envía al fondo para que no interfiera con otros elementos */
 }
 
+/* Contenedor de texto con fondo negro */
 .contenedor-texto {
-    background-color: black;
-    color: white;
-    padding: 20px;
-    margin: 40px 0; /* Aumenta el margen para más espacio entre los contenedores */
-    border-radius: 10px;
-    width: 80%; /* Ocupa el 80% del ancho disponible */
-    max-width: 1200px; /* Limita el ancho máximo */
-    text-align: justify;
+    background-color: black; /* Fondo negro */
+    color: white; /* Texto en blanco */
+    padding: 20px; /* Espaciado interno */
+    margin: 40px 0; /* Márgenes arriba y abajo para separación */
+    border-radius: 10px; /* Bordes redondeados */
+    width: 80%; /* Ancho del 80% del contenedor padre */
+    max-width: 1200px; /* Máximo ancho permitido */
+    text-align: justify; /* Justificación del texto */
 }
 
+/* Estilos para nombres o títulos */
 .Nombre {
     padding: 20px;
     border-radius: 10px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+/* Estilos para la barra de navegación */
 .header {
     display: flex;
     font-family: 'Courier New', Courier, monospace; /* Fuente estilo máquina de escribir */
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-between; /* Distribuye los elementos a los extremos */
+    align-items: center; /* Centra los elementos verticalmente */
     padding: 15px 30px;
-    position: fixed;
+    position: fixed; /* Fija la barra de navegación en la parte superior */
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 100;
-    background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente */
+    z-index: 100; /* Asegura que esté por encima de otros elementos */
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo negro semitransparente */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5); /* Sombra para darle profundidad */
 }
 
+/* Estilos para el logo */
 .logo {
     height: 150px; /* Tamaño del logo */
-    margin-right: auto; /* Empuja los botones a la derecha */
-    border-radius: 20%;
+    margin-right: auto; /* Empuja los botones hacia la derecha */
+    border-radius: 20%; /* Bordes redondeados */
 }
 
+/* Contenedor de la navegación */
 .nav-container {
     display: flex;
     align-items: center;
-    gap: 20px; /* Espacio entre elementos */
+    gap: 20px; /* Espaciado entre elementos */
 }
 
+/* Botones de la navegación */
 .btn {
-    padding: 12px 25px;
-    background: #000;
-    color: white;
+    padding: 12px 25px; /* Espaciado interno */
+    background: #000; /* Fondo negro */
+    color: white; /* Texto blanco */
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease, transform 0.3s ease;
-    text-decoration: none;
-    font-size: 1.4rem;
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor tipo botón */
+    transition: background 0.3s ease, transform 0.3s ease; /* Transición suave */
+    text-decoration: none; /* Quita subrayado en caso de ser un enlace */
+    font-size: 1.4rem; /* Tamaño de fuente */
 }
 
+/* Efecto hover en los botones */
 .btn:hover {
-    background: #444;
+    background: #444; /* Cambio de color al pasar el mouse */
     transform: scale(1.1); /* Aumento de tamaño en hover */
 }
 
-/* Ajustes de imagen en la navegación */
+/* Ajustes para imágenes dentro de la navegación */
 .nav-container img {
     height: 100%;
     width: auto;
 }
 
-/* Espacio adicional debajo del header para que el contenido no quede cubierto */
+/* Espacio adicional debajo del header para que no cubra el contenido */
 body::after {
     content: '';
     display: block;
-    height: 100px; /* Espacio debajo de la barra de navegación */
+    height: 100px; /* Espacio para evitar que el contenido quede oculto debajo de la barra */
 }
 
+/* Estilos para el pie de página */
 footer {
-    position: fixed;
+    position: fixed; /* Fija el footer en la parte inferior */
     bottom: 0;
     left: 0;
-    width: 100%;
-    background-color: black;
-    padding: 20px 0;
-    text-align: center;
+    width: 100%; /* Ocupa todo el ancho */
+    background-color: black; /* Fondo negro */
+    padding: 20px 0; /* Espaciado interno */
+    text-align: center; /* Centra el texto */
 }
 
-/* Contenedor de la suscripción */
+/* Contenedor del formulario de suscripción */
 .suscribir {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* Centra los elementos */
     width: 100%;
-    max-width: 600px; /* Limitar el ancho máximo */
+    max-width: 600px; /* Limita el ancho máximo */
     margin: 0 auto;
 }
 
-/* Fila para los inputs */
+/* Estilos para los campos de entrada en el formulario */
 .suscribir input {
-    padding: 10px;
-    margin: 5px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    width: 100%;
+    padding: 10px; /* Espaciado interno */
+    margin: 5px; /* Margen entre elementos */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid #ccc; /* Borde gris */
+    width: 100%; /* Ocupar todo el ancho disponible */
 }
 
-/* El botón debe ocupar el 100% del ancho */
+/* Estilos para el botón de suscripción */
 .suscribir button {
     padding: 10px;
     margin-top: 10px;
-    width: 100%; /* El botón ocupará todo el ancho disponible */
-    border-radius: 5px;
-    background-color: white;
-    color: black;
+    width: 100%; /* Ocupar todo el ancho disponible */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: white; /* Fondo blanco */
+    color: black; /* Texto negro */
 }
 
+/* Estilos para los títulos */
 h1 {
     font-family: 'Courier New', Courier, monospace; /* Fuente estilo máquina de escribir */
     font-size: 5rem; /* Tamaño de letra grande */
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Margen inferior */
 }
 
+/* Estilos para los párrafos */
 p {
-    font-size: 2rem;
-    background-color: black;
-    text-align: justify;
-    padding: 10px;
-    border-radius: 10px;
+    font-size: 2rem; /* Tamaño de fuente */
+    background-color: black; /* Fondo negro */
+    text-align: justify; /* Justificación del texto */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
 }
