@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(../images/coffee-2560260_1280.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #3b2b2b;
+    text-align: center;
+}
+header h1 {
+    color: white;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+header p {
+    font-size: 1em;
+    color: white;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.contacto {
+    background-color: #3b2b2bbb;
+    color: white;
+    padding: 30px;
+    margin-top: 20px;
+}
+.consulta {
+    border-bottom: 1px solid #5a4a4ab2;
+    padding: 15px;
+}
+.consulta-titulo {
+    width: 100%;
+    max-width: 550px; /* Limita el tamaño de los botones */
+    text-align: left;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin: 0 auto; /centrado de los botones/
+    padding: 10px;
+}
